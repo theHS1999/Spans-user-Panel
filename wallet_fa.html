@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>کیف پول</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style_fa.css">
+</head>
+<body>
+<header>
+    <div class="mySidenav slim">
+        <ul class="custom-scrollbar fix-li">
+            <li class="logo-sn waves-effect">
+                <a href="http://spans.ir/" class="image-container navbar-brand p-0">
+                    <img src="images/logo.png" alt="spans logo">
+                </a>
+                <div class="username">نام و نام خانوادگی</div>
+            </li>
+            <li class="mySidenavToggle">
+                <div id="toggle" href="#">
+                    <i id="toggler" class="fas fa-angle-left"></i>
+                    <span>
+                        بستن نوار کناری
+                    </span>
+                </div>
+            </li>
+            <li class="sn-menu">
+                <ul class="collapsible collapsible-accordion sn-items">
+                    <li class="item">
+                        <a href="user_fa.html" class="collapsable-header">
+                            <i class="fas fa-user" data-toggle="tooltip" title="داشبورد"></i>
+                            <span>داشبورد</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="wallet_fa.html" class="collapsable-header">
+                            <i class="fas fa-wallet material-tooltip-main" data-toggle="tooltip" title="کیف پول"></i>
+                            <span>کیف پول</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="tokens_fa.html" class="collapsable-header">
+                            <i class="fas fa-coins material-tooltip-main" data-toggle="tooltip" title="توکن ها"></i>
+                            <span>توکن ها</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="notifications_fa.html" class="collapsable-header">
+                            <i class="fas fa-podcast material-tooltip-main" data-toggle="tooltip" title="اعلانات"></i>
+                            <span>اعلانات</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="bank-accounts-fa.html" class="collapsable-header">
+                            <i class="fas fa-credit-card-front material-tooltip-main" data-toggle="tooltip" title="حساب های بانکی"></i>
+                            <span>حساب های بانکی</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transaction_fa.html" class="collapsable-header">
+                            <i class="fas fa-money-bill-wave material-tooltip-main" data-toggle="tooltip" title="انتقال وجه"></i>
+                            <span>انتقال وجه</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transactions_history_fa.html" class="collapsable-header">
+                            <i class="fas fa-receipt material-tooltip-main" data-toggle="tooltip" title="گزارش تراکنش ها"></i>
+                            <span>گزارش تراکنش ها</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="converter_fa.html" class="collapsable-header">
+                            <i class="fas fa-exchange" data-toggle="tooltip" title="مبدل"></i>
+                            <span>مبدل</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav scrolling-navbar custom-navbar">
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn">
+            <p><strong>صفحه کاربری اسپانس</strong></p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a href="converter_fa.html" class="nav-link">
+                    <i class="fas fa-exchange"></i>
+                    مبدل
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownNotification" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    اعلانات
+                    <span class="badge badge-danger">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right w-200 text-right" aria-labelledby="navbarDropdownNotification">
+                    <a class="dropdown-item" href="notifications_fa.html">مشاهده همه اعلانات</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-block" href="#" id="navbarDropdownProfile" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                    حساب کاربری
+                </a>
+                <div class="dropdown-menu dropdown-menu-left text-right">
+                    <a href="edit_profile_fa.html" class="dropdown-item">ویرایش پروفایل</a>
+                    <a href="#" class="dropdown-item">خروج</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="converter converter-close">
+        <div class="toggle">
+            <i class="fas fa-caret-right"></i>
+            <div class="title">مبدل</div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-3 tabs">
+                    <div class="nav flex-column nav-pills" id="v-pills-convert-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-tooman-tab" data-toggle="pill" href="#v-pills-tooman" role="tab"
+                           aria-controls="v-pills-home" aria-selected="true">تومان</a>
+                        <a class="nav-link" id="v-pills-spans-tab" data-toggle="pill" href="#v-pills-spans" role="tab"
+                           aria-controls="v-pills-profile" aria-selected="false">Spans</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">PayPal</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-tooman" role="tabpanel"
+                             aria-labelledby="v-pills-tooman-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="tooman" name="tooman">
+                                <label for="tooman">مبلغ به تومان</label>
+                            </div>
+                            <div class="tooman-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-spans" role="tabpanel"
+                             aria-labelledby="v-pills-spans-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="spans" name="spans">
+                                <label for="spans">مبلغ به spans</label>
+                            </div>
+                            <div class="spans-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                             aria-labelledby="v-pills-messages-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="paypal" name="paypal">
+                                <label for="paypal">PayPal</label>
+                            </div>
+                            <div class="paypal-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="panel-container">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <section class="card">
+                        <div class="title">کیف پول ها</div>
+                        <div class="row justify-content-center" id="wallets">
+                            <div class="col-lg-6">
+                                <div class="wallet spans-wallet">
+                                    <div class="wallet-name">
+                                        کیف پول پیش فرض
+                                    </div>
+                                    <div class="wallet-balance">
+                                        موجودی: 1200 spans
+                                    </div>
+                                    <div class="d-flex justify-content-around choose-operation">
+                                        <a class="operation operation-deposit" data-toggle="modal" data-target="#wallet-deposit">
+                                            افزایش موجودی
+                                        </a>
+                                        <a class="operation operation-withdraw" data-toggle="modal" data-target="#wallet-withdraw">
+                                            درخواست برداشت
+                                        </a>
+                                    </div>
+                                    <div class="edit">
+                                        <a data-toggle="modal" data-target="#wallet-edit">
+                                            <i class="far fa-edit"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <a class="add-wallet" data-toggle="modal" data-target="#add-wallet">
+                                    <span>+</span>
+                                    افزودن کیف پول
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <section class="card">
+                <div class="title">تاریخچه تراکنش ها</div>
+                <div>
+                    <table class="table table-striped">
+                        <thead class="custom-thead">
+                        <tr>
+                            <th scope="col">ردیف</th>
+                            <th scope="col">کد رهگیری</th>
+                            <th scope="col">تاریخ</th>
+                            <th scope="col">مقدار تراکنش (تومان)</th>
+                            <th scope="col">مقدار تراکنش (اسپانس)</th>
+                            <th scope="col">نوع تراکنش</th>
+                            <th scope="col">وضعیت</th>
+                        </tr>
+                        </thead>
+                        <tbody class="custom-tbody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>2565203</td>
+                            <td>98/24/7</td>
+                            <td>2000</td>
+                            <td>0</td>
+                            <td>واریز به حساب</td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div id="cover" class="off"></div>
+</main>
+<!------------Modals------------>
+<div class="modal fade" id="add-wallet" tabindex="-1" role="dialog" aria-labelledby="modal3-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header add-bank-account-header">
+                <h5 class="modal-title" id="modal3-title">
+                    <strong>افزودن کیف پول</strong>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times-circle"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="md-form md-outline">
+                        <input type="text" class="form-control" id="wallet-name" name="wallet-name">
+                        <label for="wallet-name">نام کیف پول</label>
+                    </div>
+                    <div class="md-form md-outline choose-wallet">
+                        <select name="wallet" id="wallet" class="mdb-select md-form">
+                            <option value="" disabled selected>کیف پول انتخابی برای پرداخت کارمزد</option>
+                            <option value="default">کیف پول پیش فرض</option>
+                            <option value="1">کیف پول ثانویه</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">لطفا واحد پولی مورد نظر برای کیف پول را انتخاب کنید</div>
+                    <div class="md-form md-outline choose-wallet">
+                        <select name="wallet-currency" id="wallet-currency" class="mdb-select md-form">
+                            <option value="" disabled selected>واحد پول کیف پول</option>
+                            <option value="tooman">تومان</option>
+                            <option value="spans">Spans</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-spans">
+                        ساختن کیف پول
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="wallet-deposit" tabindex="-1" role="dialog" aria-labelledby="modal1-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header add-bank-account-header">
+                <h5 class="modal-title" id="modal1-title">
+                    <strong>افزایش موجودی "نام کیف پول"</strong>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="balance">
+                    موجودی "نام کیف پول" :
+                    <span> 1200 spans </span>
+                </div>
+                <form action="">
+                    <div class="md-form md-outline">
+                        <input type="text" class="form-control" id="deposit-amount" name="deposit-amount">
+                        <label for="deposit-amount">مبلغ</label>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" class="form-control" id="deposit-cardNum" name="deposit-cardNum">
+                        <label for="deposit-cardNum">شماره کارت بانکی</label>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="deposit-shabaNum" name="deposit-shabaNum" class="form-control">
+                        <label for="deposit-shabaNum" >شماره شبا</label>
+                        <span class="shabaNumSpan" id="deposit-shabaNumSpan">IR -</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-spans">افزایش موجودی</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="wallet-withdraw" tabindex="-1" role="dialog" aria-labelledby="modal2-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header add-bank-account-header">
+                <h5 class="modal-title" id="modal2-title">
+                    <strong>درخواست برداشت از "نام کیف پول"</strong>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="balance">
+                    موجودی "نام کیف پول" :
+                    <span> 1200 spans </span>
+                </div>
+                <form action="">
+                    <div class="md-form md-outline">
+                        <input type="text" class="form-control" id="withdraw-amount" name="withdraw-amount">
+                        <label for="withdraw-amount">مبلغ</label>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" class="form-control" id="withdraw-cardNum" name="withdraw-cardNum">
+                        <label for="withdraw-cardNum">شماره کارت بانکی</label>
+                    </div>
+                    <div class="md-form md-outline">
+                        <input type="text" id="withdraw-shabaNum" name="withdraw-shabaNum" class="form-control">
+                        <label for="withdraw-shabaNum" >شماره شبا</label>
+                        <span class="shabaNumSpan" id="withdraw-shabaNumSpan">IR -</span>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-spans">درخواست برداشت</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="wallet-edit" tabindex="-1" role="dialog" aria-labelledby="modal4-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header add-bank-account-header">
+                <h5 class="modal-title" id="modal4-title">
+                    <strong>ویرایش "نام کیف پول"</strong>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times-circle"></i>
+                        </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="md-form md-outline">
+                        <input type="text" class="form-control" id="wallet-name-edit" name="wallet-name-edit">
+                        <label for="wallet-name-edit">نام کیف پول</label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-spans">ثبت تغییرات</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/sideBar.js"></script>
+<script type="text/javascript" src="js/converter_fa.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#wallet").materialSelect();
+        $("#wallet-currency").materialSelect();
+    });
+</script>
+</body>
+</html>

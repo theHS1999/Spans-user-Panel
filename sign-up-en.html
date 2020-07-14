@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style_en.css">
+</head>
+<body>
+    <main class="panel-container p-0">
+    <section class="form-box" >
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-wizard">
+
+                    <!-- Form Wizard -->
+                    <form role="form" action="" method="post">
+
+                        <h3>Spans Registration</h3>
+                        <p style="padding: 20px 0; text-align: center">PLease complete the form for the next step</p>
+
+                        <!-- Form progress -->
+                        <div class="form-wizard-steps form-wizard-tolal-steps-4">
+                            <div class="form-wizard-progress">
+                                <div class="form-wizard-progress-line" data-now-value="12.25" data-number-of-steps="4" style="width: 12.25%;"></div>
+                            </div>
+                            <!-- Step 1 -->
+                            <div class="form-wizard-step active">
+                                <div class="form-wizard-step-icon"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                <p style="left: 46px;">Personal</p>
+                            </div>
+                            <!-- Step 1 -->
+
+                            <!-- Step 2 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+                                <p class="large-word" style="left: 30px">Communication</p>
+                            </div>
+                            <!-- Step 2 -->
+
+                            <!-- Step 3 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                <p class="tooTop" style="left: 54px;">Profile</p>
+                            </div>
+                            <!-- Step 3 -->
+
+                            <!-- Step 4 -->
+                            <div class="form-wizard-step">
+                                <div class="form-wizard-step-icon"><i class="fas fa-credit-card-front" aria-hidden="true"></i></div>
+                                <p style="left: 50px;">Account</p>
+                            </div>
+                            <!-- Step 4 -->
+                        </div>
+                        <!-- Form progress -->
+
+
+                        <!-- Form Step 1 -->
+                        <fieldset class="step-form">
+                            <h4> Personal Information<span>Step 1: </span></h4>
+                            <div class="md-form md-outline">
+                                <input type="text" id="name" style="margin-bottom: 30px" name="name" class="form-control required">
+                                <label class="tooTop" for="name">First Name</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="text" id="familyName" name="familyName" class="form-control required">
+                                <label for="familyName">Surname</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="text" id="fatherName" name="fatherName" class="form-control required">
+                                <label for="fatherName">Father Name</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="text" id="idNum" name="idNum" class="form-control required">
+                                <label for="idNum">ID Number</label>
+                            </div>
+                            <div class="form-wizard-buttons row justify-content-center">
+                                <button type="button" class="btn btn-next btn-spans-light">Next step</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 1 -->
+
+                        <!-- Form Step 2 -->
+                        <fieldset class="step-form">
+
+                            <h4>Communication Methods <span> Step 2: </span></h4>
+                            <div class="md-form md-outline">
+                                <input type="text" id="phoneNum" name="phoneNum" class="form-control required" style="margin-bottom: 30px;">
+                                <label class="tooTop" for="phoneNum">Phone Number</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="text" id="mobileNum" name="mobileNum" class="form-control required">
+                                <label for="mobileNum">Mobile Number</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="text" id="email" name="email" class="form-control required">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="custom-select-wrapper">
+                                <select class="sign-up-select required" name="country" id="country">
+                                    <option value="" selected disabled>Country</option>
+                                    <option value="France">France</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="USA">USA</option>
+                                    <option value="UK">United Kingdom</option>
+                                </select>
+                            </div>
+                            <div class="custom-select-wrapper">
+                                <select class="sign-up-select required" name="city" id="city">
+                                    <option value="" selected disabled>City</option>
+                                    <option value="Tehran">Tehran</option>
+                                    <option value="Rasht">Rasht</option>
+                                    <option value="Anzali">Anzali</option>
+                                    <option value=Lahijan"">Lahijan</option>
+                                    <option value="Yazd">Yazd</option>
+                                </select>
+                            </div>
+                            <div class="form-wizard-buttons row justify-content-around">
+                                <button type="button" class="btn btn-spans btn-previous">Previous Step</button>
+                                <button type="button" class="btn btn-next btn-spans-light">Next Step</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 2 -->
+
+                        <!-- Form Step 3 -->
+                        <fieldset class="step-form">
+
+                            <h4>Account Information <span>Step 3: </span></h4>
+                            <div class="md-form md-outline">
+                                <input type="password" id="password" name="password" class="form-control required" style="margin-bottom: 30px;">
+                                <label class="tooTop" for="password">Password</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="password" id="passwordRepeat" name="passwordRepeat" class="form-control required">
+                                <label for="passwordRepeat">Repeat Password</label>
+                            </div>
+                            <div class="file-field" style="padding-bottom: 30px">
+                                <div class="btn btn-spans-light btn-sm float-right">
+                                    <span>Profile picture</span>
+                                    <input type="file">
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate required" type="text" placeholder="Choose a file">
+                                </div>
+                            </div>
+                            <div class="form-wizard-buttons row justify-content-around">
+                                <button type="button" class="btn btn-spans btn-previous">Previous Step</button>
+                                <button type="button" class="btn btn-next btn-spans-light">Next Step</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 3 -->
+
+                        <!-- Form Step 4 -->
+                        <fieldset class="step-form">
+
+                            <h4>Bank Account Information <span>Step 4:</span></h4>
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control required" id="cardNum" style="margin-bottom: 30px;">
+                                <label class="tooTop" for="cardNum">Credit Card Number</label>
+                            </div>
+                            <div class="md-form md-outline">
+                                <input type="text" id="shabaNum" name="shabaNum" class="form-control required">
+                                <label for="shabaNum">Zip Code</label>
+                            </div>
+                            <div class="form-wizard-buttons row justify-content-around">
+                                <button type="button" class="btn btn-spans btn-previous">Previous Step</button>
+                                <button type="submit" class="btn btn-next btn-spans-light">Register</button>
+                            </div>
+                        </fieldset>
+                        <!-- Form Step 4 -->
+
+                    </form>
+                    <!-- Form Wizard -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/chart.bundle.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        function scroll_to_class(element_class, removed_height) {
+            var scroll_to = $(element_class).offset().top - removed_height;
+            if($(window).scrollTop() != scroll_to) {
+                $('.form-wizard').stop().animate({scrollTop: scroll_to}, 0);
+            }
+        }
+
+        function bar_progress(progress_line_object, direction) {
+            var number_of_steps = progress_line_object.data('number-of-steps');
+            var now_value = progress_line_object.data('now-value');
+            var new_value = 0;
+            if(direction == 'right') {
+                new_value = now_value + ( 100 / number_of_steps );
+            }
+            else if(direction == 'left') {
+                new_value = now_value - ( 100 / number_of_steps );
+            }
+            progress_line_object.attr('style', 'width: ' + new_value + '%;').data('now-value', new_value);
+        }
+
+        jQuery(document).ready(function() {
+
+            /*
+                Form
+            */
+            $('.form-wizard fieldset:first').fadeIn('slow');
+
+            $('.form-wizard .required').on('focus', function() {
+                $(this).removeClass('input-error');
+            });
+
+            // next step
+            $('.form-wizard .btn-next').on('click', function() {
+                var parent_fieldset = $(this).parents('fieldset');
+                var next_step = true;
+                // navigation steps / progress steps
+                var current_active_step = $(this).parents('.form-wizard').find('.form-wizard-step.active');
+                var progress_line = $(this).parents('.form-wizard').find('.form-wizard-progress-line');
+
+                // fields validation
+                parent_fieldset.find('.required').each(function() {
+                    if(!$(this).val()) {
+                        $(this).css("margin-bottom" , "5px");
+                        $(this).parent().find(".input-warning").remove();
+                        $(this).parent().append(`
+                            <div class="input-warning">Please complete this field</div>
+                        `);
+                        next_step = false;
+                    }
+                    else {
+                        $(this).parent().find(".input-warning").remove();
+                    }
+                });
+                // fields validation
+
+                if( next_step ) {
+                    parent_fieldset.fadeOut(400, function() {
+                        // change icons
+                        current_active_step.removeClass('active').addClass('activated').next().addClass('active');
+                        // progress bar
+                        bar_progress(progress_line, 'right');
+                        // show next step
+                        $(this).next().fadeIn();
+                        // scroll window to beginning of the form
+                        scroll_to_class( $('.form-wizard'), 20 );
+                    });
+                }
+
+            });
+
+            // previous step
+            $('.form-wizard .btn-previous').on('click', function() {
+                // navigation steps / progress steps
+                var current_active_step = $(this).parents('.form-wizard').find('.form-wizard-step.active');
+                var progress_line = $(this).parents('.form-wizard').find('.form-wizard-progress-line');
+
+                $(this).parents('fieldset').fadeOut(400, function() {
+                    // change icons
+                    current_active_step.removeClass('active').prev().removeClass('activated').addClass('active');
+                    // progress bar
+                    bar_progress(progress_line, 'left');
+                    // show previous step
+                    $(this).prev().fadeIn();
+                    // scroll window to beginning of the form
+                    scroll_to_class( $('.form-wizard'), 20 );
+                });
+            });
+
+            // submit
+            $('.form-wizard').on('submit', function(e) {
+
+                // fields validation
+                $(this).find('.required').each(function() {
+                    if( $(this).val() == "" ) {
+                        e.preventDefault();
+                        $(this).css("margin-bottom" , "5px");
+                        $(this).parent().find(".input-warning").remove();
+                        $(this).parent().append(`
+                            <div class="input-warning">Please complete this field</div>
+                        `);
+                    }
+                    else {
+                        $(this).removeClass('input-error');
+                    }
+                });
+                // fields validation
+
+            });
+
+
+        });
+
+
+
+
+
+        // image uploader scripts
+
+        var $dropzone = $('.image_picker'),
+            $droptarget = $('.drop_target'),
+            $dropinput = $('#inputFile'),
+            $dropimg = $('.image_preview'),
+            $remover = $('[data-action="remove_current_image"]');
+
+        $dropzone.on('dragover', function() {
+            $droptarget.addClass('dropping');
+            return false;
+        });
+
+        $dropzone.on('dragend dragleave', function() {
+            $droptarget.removeClass('dropping');
+            return false;
+        });
+
+        $dropzone.on('drop', function(e) {
+            $droptarget.removeClass('dropping');
+            $droptarget.addClass('dropped');
+            $remover.removeClass('disabled');
+            e.preventDefault();
+
+            var file = e.originalEvent.dataTransfer.files[0],
+                reader = new FileReader();
+
+            reader.onload = function(event) {
+                $dropimg.css('background-image', 'url(' + event.target.result + ')');
+            };
+
+            console.log(file);
+            reader.readAsDataURL(file);
+
+            return false;
+        });
+
+        $dropinput.change(function(e) {
+            $droptarget.addClass('dropped');
+            $remover.removeClass('disabled');
+            $('.image_title input').val('');
+
+            var file = $dropinput.get(0).files[0],
+                reader = new FileReader();
+
+            reader.onload = function(event) {
+                $dropimg.css('background-image', 'url(' + event.target.result + ')');
+            }
+
+            reader.readAsDataURL(file);
+        });
+
+        $remover.on('click', function() {
+            $dropimg.css('background-image', '');
+            $droptarget.removeClass('dropped');
+            $remover.addClass('disabled');
+            $('.image_title input').val('');
+        });
+
+        $('.image_title input').blur(function() {
+            if ($(this).val() != '') {
+                $droptarget.removeClass('dropped');
+            }
+        });
+    </script>
+</body>
+</html>

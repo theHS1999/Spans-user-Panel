@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>دونیت</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style_fa.css">
+</head>
+<body>
+<header>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav scrolling-navbar custom-navbar">
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn">
+            <p><strong>صفحه دونیت اسپانس</strong></p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownConverter" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-exchange"></i>
+                    مبدل
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownConverter" id="converter-dropdown">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-4" id="select-currency">
+                                <div class="md-form md-outline">
+                                    <select name="currency" id="convert-currency" class="mdb-select md-form">
+                                        <option value="" disabled selected>واحد پول</option>
+                                        <option value="tooman">تومان</option>
+                                        <option value="spans">spans</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4" id="enter-amount">
+                                <div class="md-form md-outline">
+                                    <input type="text" class="form-control" id="convert-amount" disabled>
+                                    <label for="convert-amount"></label>
+                                </div>
+                            </div>
+                            <div class="col-3" id="convert-result">
+                                <div class="d-flex justify-content-around mt-3">
+                                    <div class="converted-currency1"></div>
+                                    <div class="converted-currency2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="converter_fa.html" class="dropdown-item" target="_blank">
+                            رفتن به صفحه مبدل
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link d-inline-block" href="sign-up-fa.html">
+                    <i class="fas fa-user"></i>
+                    ثبت نام
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container-fluid">
+        <section class="card">
+            <div class="title">دونیت کردن</div>
+            <div id="donate">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="account-details">
+                            <div class="receiver">مشخصات دریافت کننده</div>
+                            <div class="image-container">
+                                <img src="images/logo.png" alt="avatar">
+                            </div>
+                            <div class="text-container">
+                                <h6 class="name">نام کاربری</h6>
+                                <div class="email">e******@*****.***</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="">
+                            <div style="text-align: center; margin-bottom: 30px;">لطفا واحد پول و مبلغ مورد نظر برای انتقال را وارد نمایید</div>
+                            <ul class="nav nav-tabs nav-justified md-tabs" id="transactionTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="tooman-tab-just" data-toggle="tab" href="#tooman-just"
+                                       role="tab" aria-controls="tooman-just" aria-selected="false">تومان</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="spans-tab-just" data-toggle="tab" href="#spans-just"
+                                       role="tab" aria-controls="spans-just" aria-selected="false">Spans</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="paypal-tab-just" data-toggle="tab" href="#paypal-just"
+                                       role="tab" aria-controls="paypal-just" aria-selected="false">PayPal</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content pt-5" id="transactionTabContentJust" style="margin-bottom: 0 !important;">
+                                <div class="tab-pane fade show active" id="tooman-just" role="tabpanel"
+                                     aria-labelledby="tooman-tab-just" style="margin-bottom: 0 !important;">
+                                    <div class="md-form md-outline">
+                                        <input type="text" id="ToomanAmount" name="ToomanAmount" class="form-control">
+                                        <label for="ToomanAmount">مبلغ (تومان)</label>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="spans-just" role="tabpanel"
+                                     aria-labelledby="spans-tab-just" style="margin-bottom: 0 !important;">
+                                    <div class="md-form md-outline">
+                                        <input type="text" id="SpansAmount" name="SpansAmount" class="form-control">
+                                        <label for="SpansAmount">مبلغ (spans)</label>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="paypal-just" role="tabpanel"
+                                     aria-labelledby="paypal-tab-just" style="margin-bottom: 0 !important;">
+                                        <div class="md-form md-outline">
+                                            <input type="text" id="paypalAmount" name="paypalAmount" class="form-control">
+                                            <label for="paypalAmount">مبلغ (paypal)</label>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="mb-4"></div>
+                            <div style="text-align: center; margin-bottom: 30px;">لطفا ایمیل خود را وارد نمایید</div>
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="email" name="email">
+                                <label for="email">ایمیل</label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-spans">
+                                    پرداخت
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="cover" class="off"></div>
+</main>
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/sideBar.js"></script>
+<script type="text/javascript" src="js/converter_fa.js"></script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style_en.css">
+</head>
+<body>
+<header>
+    <div class="mySidenav slim">
+        <ul class="custom-scrollbar fix-li">
+            <li class="logo-sn waves-effect">
+                <a href="http://spans.ir/" class="image-container navbar-brand p-0">
+                    <img src="images/logo.png" alt="spans logo">
+                </a>
+                <div class="username">Full Name</div>
+            </li>
+            <li class="mySidenavToggle">
+                <div id="toggle">
+                    <i id="toggler" class="fas fa-angle-right"></i>
+                    <span>
+                        Close sidenav
+                    </span>
+                </div>
+            </li>
+            <li class="sn-menu">
+                <ul class="collapsible collapsible-accordion sn-items">
+                    <li class="item">
+                        <a href="user_en.html" class="collapsable-header">
+                            <i class="fas fa-user" data-toggle="tooltip" title="Dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="wallet_en.html" class="collapsable-header">
+                            <i class="fas fa-wallet material-tooltip-main" data-toggle="tooltip" title="Wallet"></i>
+                            <span>Wallet</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="tokens_en.html" class="collapsable-header">
+                            <i class="fas fa-coins material-tooltip-main" data-toggle="tooltip" title="Tokens"></i>
+                            <span>Tokens</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="notifications_en.html" class="collapsable-header">
+                            <i class="fas fa-podcast material-tooltip-main" data-toggle="tooltip" title="Notifications"></i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="bank-accounts-en.html" class="collapsable-header">
+                            <i class="fas fa-credit-card-front material-tooltip-main" data-toggle="tooltip" title="Bank Accounts"></i>
+                            <span>Bank Accounts</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transaction_en.html" class="collapsable-header">
+                            <i class="fas fa-money-bill-wave material-tooltip-main" data-toggle="tooltip" title="Transfer money"></i>
+                            <span>Transfer money</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transactions_history_en.html" class="collapsable-header">
+                            <i class="fas fa-receipt material-tooltip-main" data-toggle="tooltip" title="Transactions report"></i>
+                            <span>Transactions report</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="converter_en.html" class="collapsable-header">
+                            <i class="fas fa-exchange" data-toggle="tooltip" title="Converter"></i>
+                            <span>Converter</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav scrolling-navbar custom-navbar">
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn">
+            <p><strong>Spans User Page</strong></p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item">
+                <a href="converter_en.html" class="nav-link">
+                    <i class="fas fa-exchange"></i>
+                    Converter
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownConverter" id="converter-dropdown">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-4" id="select-currency">
+                                <div class="md-form md-outline">
+                                    <select name="currency" id="convert-currency" class="mdb-select md-form">
+                                        <option value="" disabled selected>Currency</option>
+                                        <option value="tooman">Tooman</option>
+                                        <option value="spans">spans</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4" id="enter-amount">
+                                <div class="md-form md-outline">
+                                    <input type="text" class="form-control" id="convert-amount" name="convert-amount" disabled>
+                                    <label for="convert-amount"></label>
+                                </div>
+                            </div>
+                            <div class="col-3" id="convert-result">
+                                <div class="d-flex justify-content-around mt-3">
+                                    <div class="converted-currency1"></div>
+                                    <div class="converted-currency2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="converter_en.html" class="dropdown-item" target="_blank">
+                            Go to converter page
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNotification" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                    <span class="badge badge-danger">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-left w-200" aria-labelledby="navbarDropdownNotification">
+                    <a class="dropdown-item" href="notifications_en.html">See All Notifications</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-block" href="#" id="navbarDropdownProfile" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                    User Account
+                </a>
+                <div class="dropdown-menu dropdown-menu-left" id="account-dropdown">
+                    <a href="edit_profile_en.html" class="dropdown-item">Edit Profile</a>
+                    <a href="#" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="converter converter-close">
+        <div class="toggle">
+            <i class="fas fa-caret-left"></i>
+            <div class="title" style="font-size: 10px; font-weight: bold">Convert</div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-3 tabs">
+                    <div class="nav flex-column nav-pills" id="v-pills-convert-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-tooman-tab" data-toggle="pill" href="#v-pills-tooman" role="tab"
+                           aria-controls="v-pills-home" aria-selected="true">Tooman</a>
+                        <a class="nav-link" id="v-pills-spans-tab" data-toggle="pill" href="#v-pills-spans" role="tab"
+                           aria-controls="v-pills-profile" aria-selected="false">Spans</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">PayPal</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-tooman" role="tabpanel"
+                             aria-labelledby="v-pills-tooman-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="tooman" name="tooman">
+                                <label for="tooman">Amount by Tooman</label>
+                            </div>
+                            <div class="tooman-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-spans" role="tabpanel"
+                             aria-labelledby="v-pills-spans-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="spans" name="spans">
+                                <label for="spans">Amount by Spans</label>
+                            </div>
+                            <div class="spans-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                             aria-labelledby="v-pills-messages-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="paypal" name="paypal">
+                                <label for="paypal">Amount by Paypal</label>
+                            </div>
+                            <div class="paypal-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="panel-container">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <section class="card">
+                    <div class="title">Wallets</div>
+                    <div class="row justify-content-center" id="wallets">
+                        <div class="col-lg-6">
+                            <div class="wallet spans-wallet">
+                                <div class="wallet-name">
+                                    Default Wallet
+                                </div>
+                                <div class="wallet-balance">
+                                    balance: 1200 spans
+                                </div>
+                                <div class="d-flex justify-content-around choose-operation">
+                                    <a class="operation operation-deposit" data-toggle="modal" data-target="#wallet-deposit">
+                                        Deposit
+                                    </a>
+                                    <a class="operation operation-withdraw" data-toggle="modal" data-target="#wallet-withdraw">
+                                        Withdraw
+                                    </a>
+                                </div>
+                                <div class="edit">
+                                    <a data-toggle="modal" data-target="#wallet-edit">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="add-wallet" data-toggle="modal" data-target="#add-wallet">
+                                <span>+</span>
+                                Add Wallet
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <section class="card">
+            <div class="title">Transactions history</div>
+            <div>
+                <table class="table table-striped">
+                    <thead class="custom-thead">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Tracking Code</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Transaction amount (Tooman)</th>
+                            <th scope="col">Transaction amount (Spans)</th>
+                            <th scope="col">Transaction Type</th>
+                            <th scope="col">status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="custom-tbody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>2565203</td>
+                            <td>98/24/7</td>
+                            <td>2000</td>
+                            <td>0</td>
+                            <td>deposit</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div id="cover" class="off"></div>
+
+
+    <!------------Modals------------>
+    <div class="modal fade" id="add-wallet" tabindex="-1" role="dialog" aria-labelledby="modal3-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header add-bank-account-header">
+                    <h5 class="modal-title" id="modal3-title">
+                        <strong>Add Wallet</strong>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <i class="fas fa-times-circle"></i>
+                </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="md-form md-outline">
+                            <input type="text" class="form-control" id="wallet-name" name="wallet-name">
+                            <label for="wallet-name">Wallet name</label>
+                        </div>
+                        <div class="md-form md-outline choose-wallet">
+                            <select name="wallet" id="wallet" class="mdb-select md-form">
+                                <option value="" disabled selected>Choose wallet for wage</option>
+                                <option value="default">Default Wallet</option>
+                                <option value="1">Secondary Wallet</option>
+                            </select>
+                        </div>
+                        <div class="mb-2">Please choose wallet's currency</div>
+                        <div class="md-form md-outline choose-wallet">
+                            <select name="wallet-currency" id="wallet-currency" class="mdb-select md-form">
+                                <option value="" disabled selected>Wallet currency</option>
+                                <option value="tooman">Tooman</option>
+                                <option value="spans">Spans</option>
+                                <option value="paypal">PayPal</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-spans">
+                             Create Wallet
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="wallet-deposit" tabindex="-1" role="dialog" aria-labelledby="modal1-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header add-bank-account-header">
+                    <h5 class="modal-title" id="modal1-title">
+                        <strong>Deposit into "Wallet Name"</strong>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times-circle"></i>
+                    </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="balance">
+                        "Wallet Name" balance:
+                        <span> 1200 spans </span>
+                    </div>
+                    <form action="">
+                        <div class="md-form md-outline">
+                            <input type="text" class="form-control" id="deposit-amount" name="deposit-amount">
+                            <label for="deposit-amount">Amount</label>
+                        </div>
+                        <div class="md-form md-outline">
+                            <input type="text" class="form-control" id="deposit-cardNum" name="deposit-cardNum">
+                            <label for="deposit-cardNum">Credit Card Number</label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-spans">Deposit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="wallet-withdraw" tabindex="-1" role="dialog" aria-labelledby="modal2-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header add-bank-account-header">
+                    <h5 class="modal-title" id="modal2-title">
+                        <strong>Request Withdraw From "Wallet Name"</strong>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times-circle"></i>
+                    </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="balance">
+                        "Wallet Name" balance:
+                        <span> 1200 spans </span>
+                    </div>
+                    <form action="">
+                        <div class="md-form md-outline">
+                            <input type="text" class="form-control" id="withdraw-amount" name="withdraw-amount">
+                            <label for="withdraw-amount">amount</label>
+                        </div>
+                        <div class="md-form md-outline">
+                            <input type="text" class="form-control" id="withdraw-cardNum" name="withdraw-cardNum">
+                            <label for="withdraw-cardNum">Credit Card number</label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-spans">Request Withdraw</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="wallet-edit" tabindex="-1" role="dialog" aria-labelledby="modal4-title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header add-bank-account-header">
+                    <h5 class="modal-title" id="modal4-title">
+                        <strong>Edit "Wallet Name"</strong>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times-circle"></i>
+                    </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="md-form md-outline">
+                            <input type="text" class="form-control" id="wallet-name-edit" name="wallet-name-edit">
+                            <label for="wallet-name-edit">Wallet name</label>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-spans">Submit Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/sideBar.js"></script>
+<script type="text/javascript" src="js/converter_en.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#wallet").materialSelect();
+        $("#wallet-currency").materialSelect();
+    });
+</script>
+</body>
+</html>

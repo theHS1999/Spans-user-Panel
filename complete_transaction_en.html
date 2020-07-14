@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete trransaction</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style_en.css">
+</head>
+<body>
+<header>
+    <div class="mySidenav slim">
+        <ul class="custom-scrollbar fix-li">
+            <li class="logo-sn waves-effect">
+                <a href="http://spans.ir/" class="image-container navbar-brand p-0">
+                    <img src="images/logo.png" alt="spans logo">
+                </a>
+                <div class="username">Full Name</div>
+            </li>
+            <li class="mySidenavToggle">
+                <div id="toggle">
+                    <i id="toggler" class="fas fa-angle-right"></i>
+                    <span>
+                        Close sidenav
+                    </span>
+                </div>
+            </li>
+            <li class="sn-menu">
+                <ul class="collapsible collapsible-accordion sn-items">
+                    <li class="item">
+                        <a href="user_en.html" class="collapsable-header">
+                            <i class="fas fa-user" data-toggle="tooltip" title="Dashboard"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="wallet_en.html" class="collapsable-header">
+                            <i class="fas fa-wallet material-tooltip-main" data-toggle="tooltip" title="Wallet"></i>
+                            <span>Wallet</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="tokens_en.html" class="collapsable-header">
+                            <i class="fas fa-coins material-tooltip-main" data-toggle="tooltip" title="Tokens"></i>
+                            <span>Tokens</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="notifications_en.html" class="collapsable-header">
+                            <i class="fas fa-podcast material-tooltip-main" data-toggle="tooltip" title="Notifications"></i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="bank-accounts-en.html" class="collapsable-header">
+                            <i class="fas fa-credit-card-front material-tooltip-main" data-toggle="tooltip" title="Bank Accounts"></i>
+                            <span>Bank Accounts</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transaction_en.html" class="collapsable-header">
+                            <i class="fas fa-money-bill-wave material-tooltip-main" data-toggle="tooltip" title="Transfer money"></i>
+                            <span>Transfer money</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transactions_history_en.html" class="collapsable-header">
+                            <i class="fas fa-receipt material-tooltip-main" data-toggle="tooltip" title="Transactions report"></i>
+                            <span>Transactions report</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="converter_en.html" class="collapsable-header">
+                            <i class="fas fa-exchange" data-toggle="tooltip" title="Converter"></i>
+                            <span>Converter</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav scrolling-navbar custom-navbar">
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn">
+            <p><strong>Spans User Page</strong></p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item">
+                <a href="converter_en.html" class="nav-link">
+                    <i class="fas fa-exchange"></i>
+                    Converter
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownConverter" id="converter-dropdown">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center mt-4">
+                            <div class="col-4" id="select-currency">
+                                <div class="md-form md-outline">
+                                    <select name="currency" id="convert-currency" class="mdb-select md-form">
+                                        <option value="" disabled selected>Currency</option>
+                                        <option value="tooman">Tooman</option>
+                                        <option value="spans">spans</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4" id="enter-amount">
+                                <div class="md-form md-outline">
+                                    <input type="text" class="form-control" id="convert-amount" name="convert-amount" disabled>
+                                    <label for="convert-amount"></label>
+                                </div>
+                            </div>
+                            <div class="col-3" id="convert-result">
+                                <div class="d-flex justify-content-around mt-3">
+                                    <div class="converted-currency1"></div>
+                                    <div class="converted-currency2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="converter_en.html" class="dropdown-item" target="_blank">
+                            Go to converter page
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNotification" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    Notifications
+                    <span class="badge badge-danger">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-left w-200" aria-labelledby="navbarDropdownNotification">
+                    <a class="dropdown-item" href="notifications_en.html">See All Notifications</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-block" href="#" id="navbarDropdownProfile" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                    User Account
+                </a>
+                <div class="dropdown-menu dropdown-menu-left" id="account-dropdown">
+                    <a href="edit_profile_en.html" class="dropdown-item">Edit Profile</a>
+                    <a href="#" class="dropdown-item">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="converter converter-close">
+        <div class="toggle">
+            <i class="fas fa-caret-left"></i>
+            <div class="title" style="font-size: 10px; font-weight: bold">Convert</div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-3 tabs">
+                    <div class="nav flex-column nav-pills" id="v-pills-convert-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-tooman-tab" data-toggle="pill" href="#v-pills-tooman" role="tab"
+                           aria-controls="v-pills-home" aria-selected="true">Tooman</a>
+                        <a class="nav-link" id="v-pills-spans-tab" data-toggle="pill" href="#v-pills-spans" role="tab"
+                           aria-controls="v-pills-profile" aria-selected="false">Spans</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">PayPal</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-tooman" role="tabpanel"
+                             aria-labelledby="v-pills-tooman-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="tooman" name="tooman">
+                                <label for="tooman">Amount by Tooman</label>
+                            </div>
+                            <div class="tooman-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-spans" role="tabpanel"
+                             aria-labelledby="v-pills-spans-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="spans" name="spans">
+                                <label for="spans">Amount by Spans</label>
+                            </div>
+                            <div class="spans-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                             aria-labelledby="v-pills-messages-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="paypal" name="paypal">
+                                <label for="paypal">Amount by Paypal</label>
+                            </div>
+                            <div class="paypal-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="panel-container">
+    <div class="container-fluid">
+        <section class="card">
+            <div class="title">Transaction</div>
+            <div id="complete-transaction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="account-details">
+                            <div class="image-container">
+                                <img src="images/logo.png" alt="avatar">
+                            </div>
+                            <div class="text-container">
+                                <h4 class="name">Full Name</h4>
+                                <div class="email">e******@*****.***</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="">
+                            <div style="text-align: center; margin-bottom: 30px;">Please enter the amount of transaction</div>
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="amount" name="amount">
+                                <label for="amount">Amount (Currency)</label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-spans">
+                                    Complete Transaction
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="cover" class="off"></div>
+</main>
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/sideBar.js"></script>
+<script type="text/javascript" src="js/converter_en.js"></script>
+</body>
+</html>

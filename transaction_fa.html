@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>انتقال وجه</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/style_fa.css">
+</head>
+<body>
+<header>
+    <div class="mySidenav slim">
+        <ul class="custom-scrollbar fix-li">
+            <li class="logo-sn waves-effect">
+                <a href="http://spans.ir/" class="image-container navbar-brand p-0">
+                    <img src="images/logo.png" alt="spans logo">
+                </a>
+                <div class="username">نام و نام خانوادگی</div>
+            </li>
+            <li class="mySidenavToggle">
+                <div id="toggle" href="#">
+                    <i id="toggler" class="fas fa-angle-left"></i>
+                    <span>
+                        بستن نوار کناری
+                    </span>
+                </div>
+            </li>
+            <li class="sn-menu">
+                <ul class="collapsible collapsible-accordion sn-items">
+                    <li class="item">
+                        <a href="user_fa.html" class="collapsable-header">
+                            <i class="fas fa-user" data-toggle="tooltip" title="داشبورد"></i>
+                            <span>داشبورد</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="wallet_fa.html" class="collapsable-header">
+                            <i class="fas fa-wallet material-tooltip-main" data-toggle="tooltip" title="کیف پول"></i>
+                            <span>کیف پول</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="tokens_fa.html" class="collapsable-header">
+                            <i class="fas fa-coins material-tooltip-main" data-toggle="tooltip" title="توکن ها"></i>
+                            <span>توکن ها</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="notifications_fa.html" class="collapsable-header">
+                            <i class="fas fa-podcast material-tooltip-main" data-toggle="tooltip" title="اعلانات"></i>
+                            <span>اعلانات</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="bank-accounts-fa.html" class="collapsable-header">
+                            <i class="fas fa-credit-card-front material-tooltip-main" data-toggle="tooltip" title="حساب های بانکی"></i>
+                            <span>حساب های بانکی</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transaction_fa.html" class="collapsable-header">
+                            <i class="fas fa-money-bill-wave material-tooltip-main" data-toggle="tooltip" title="انتقال وجه"></i>
+                            <span>انتقال وجه</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="transactions_history_fa.html" class="collapsable-header">
+                            <i class="fas fa-receipt material-tooltip-main" data-toggle="tooltip" title="گزارش تراکنش ها"></i>
+                            <span>گزارش تراکنش ها</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="converter_fa.html" class="collapsable-header">
+                            <i class="fas fa-exchange" data-toggle="tooltip" title="مبدل"></i>
+                            <span>مبدل</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg double-nav scrolling-navbar custom-navbar">
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn">
+            <p><strong>صفحه کاربری اسپانس</strong></p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a href="converter_fa.html" class="nav-link">
+                    <i class="fas fa-exchange"></i>
+                    مبدل
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownNotification" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell"></i>
+                    اعلانات
+                    <span class="badge badge-danger">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right w-200 text-right" aria-labelledby="navbarDropdownNotification">
+                    <a class="dropdown-item" href="notifications_fa.html">مشاهده همه اعلانات</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-inline-block" href="#" id="navbarDropdownProfile" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+                    حساب کاربری
+                </a>
+                <div class="dropdown-menu dropdown-menu-left text-right">
+                    <a href="edit_profile_fa.html" class="dropdown-item">ویرایش پروفایل</a>
+                    <a href="#" class="dropdown-item">خروج</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="converter converter-close">
+        <div class="toggle">
+            <i class="fas fa-caret-right"></i>
+            <div class="title">مبدل</div>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-3 tabs">
+                    <div class="nav flex-column nav-pills" id="v-pills-convert-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-tooman-tab" data-toggle="pill" href="#v-pills-tooman" role="tab"
+                           aria-controls="v-pills-home" aria-selected="true">تومان</a>
+                        <a class="nav-link" id="v-pills-spans-tab" data-toggle="pill" href="#v-pills-spans" role="tab"
+                           aria-controls="v-pills-profile" aria-selected="false">Spans</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                           aria-controls="v-pills-messages" aria-selected="false">PayPal</a>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-tooman" role="tabpanel"
+                             aria-labelledby="v-pills-tooman-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="tooman" name="tooman">
+                                <label for="tooman">مبلغ به تومان</label>
+                            </div>
+                            <div class="tooman-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-spans" role="tabpanel"
+                             aria-labelledby="v-pills-spans-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="spans" name="spans">
+                                <label for="spans">مبلغ به spans</label>
+                            </div>
+                            <div class="spans-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                             aria-labelledby="v-pills-messages-tab">
+                            <div class="md-form md-outline">
+                                <input type="text" class="form-control" id="paypal" name="paypal">
+                                <label for="paypal">PayPal</label>
+                            </div>
+                            <div class="paypal-result">
+                                <div class="converted-currency1"></div>
+                                <div class="converted-currency2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="panel-container">
+    <div class="container-fluid">
+        <section class="card">
+            <div class="title">انتقال وجه</div>
+            <div id="transaction">
+                <div>لطفا واحد پول انتقالی خود را انتخاب کنید</div>
+                <div class="row justify-content-center" style="margin-bottom: 0;">
+                    <div class="col-lg-7" style="margin-bottom: 0 !important;">
+                        <ul class="nav nav-tabs nav-justified md-tabs" id="transactionTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="tooman-tab-just" data-toggle="tab" href="#tooman-just"
+                                   role="tab" aria-controls="tooman-just" aria-selected="false">تومان</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="spans-tab-just" data-toggle="tab" href="#spans-just"
+                                   role="tab" aria-controls="spans-just" aria-selected="false">Spans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="paypal-tab-just" data-toggle="tab" href="#paypal-just"
+                                   role="tab" aria-controls="paypal-just" aria-selected="false">PayPal</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-5" id="transactionTabContentJust" style="margin-bottom: 0 !important;">
+                            <div class="tab-pane fade show active" id="tooman-just" role="tabpanel"
+                                 aria-labelledby="tooman-tab-just" style="margin-bottom: 0 !important;">
+                                <form action="">
+                                    <div>لطفا شماره شبای حساب مقصد را وارد نمایید</div>
+                                    <div class="md-form md-outline">
+                                        <input type="text" id="shabaNum" name="shabaNum" class="form-control">
+                                        <label for="shabaNum">شماره شبا</label>
+                                        <span style="direction: ltr; position: absolute; top: 10px; left: 10px;">IR -</span>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-spans">
+                                            درخواست تراکنش
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="spans-just" role="tabpanel"
+                                 aria-labelledby="spans-tab-just" style="margin-bottom: 0 !important;">
+                                <form action="">
+                                    <div>لطفا ایمیل حساب مقصد را وارد نمایید</div>
+                                    <div class="md-form md-outline">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email">ایمیل</label>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-spans">
+                                            درخواست تراکنش
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="paypal-just" role="tabpanel"
+                                 aria-labelledby="paypal-tab-just" style="margin-bottom: 0 !important;">
+                                <form action="">
+                                    <div>لطفا اکانت PayPal مقصد را وارد نمایید</div>
+                                    <div class="md-form md-outline">
+                                        <input type="text" id="paypalAccount" name="paypalAccount" class="form-control">
+                                        <label for="paypalAccount">paypal</label>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn btn-spans">
+                                            درخواست تراکنش
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div class="title">تاریخچه انتقال وجه ها</div>
+            <div>
+                <table class="table table-striped">
+                    <thead class="custom-thead">
+                    <tr>
+                        <th scope="col">ردیف</th>
+                        <th scope="col">کد رهگیری</th>
+                        <th scope="col">تاریخ</th>
+                        <th scope="col">شماره شبای مقصد</th>
+                        <th scope="col">مقدار تراکنش (تومان)</th>
+                        <th scope="col">مقدار تراکنش (اسپانس)</th>
+                        <th scope="col">وضعیت</th>
+                    </tr>
+                    </thead>
+                    <tbody class="custom-tbody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>2565203</td>
+                            <td>98/24/7</td>
+                            <td>5555555555555555555555555555</td>
+                            <td>0</td>
+                            <td>100</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <div id="cover" class="off"></div>
+</main>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/sideBar.js"></script>
+<script type="text/javascript" src="js/converter_fa.js"></script>
+</body>
+</html>
